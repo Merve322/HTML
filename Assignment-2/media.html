@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Media Page</title>
+</head>
+<body>
+
+    <h1>Media in HTML</h1>
+
+    <h2>Personal Message:</h2>
+    <p>
+        "Technology is that bridge between imagination and reality. With it, anything is possible! I aspire to be part of those who will contribute to the world of technology with meaningful, transformative and empowering solutions, no matter how little it may start."
+    </p>
+
+    <h2>My Responsive Picture and GIF</h2>
+    <!--source tag used for responsive picture sizes catering to all device width-->
+    <picture>
+        <source srcset="assets/images/woman-pic-laptop.jpg" media="(min-width: 1024px)">
+        <source srcset="assets/images/woman-pic-tablet.jpg" media="(min-width: 768px)">
+        <img src="assets/images/woman-pic.jpg" width="100%" alt="A picture of an engineering woman">
+
+    </picture>
+    <!--GIF tag as part of media elements used-->
+    <img src="assets/images/pixel-art.gif" alt="Animated technology GIF">
+
+    <h2>My Audio</h2>
+    <audio controls>
+        <source src="assets/audio/medieval-gamer-voice.mp3" type="audio/mpeg">
+        <source src="assets/audio/medieval-gamer-voice.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h2>My Video</h2>
+    <video controls width="560">
+        <source src="assets/videos/video.mp4" type="video/mp4">
+        <source src="assets/videos/video.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+
+    <h2>Embedded Media</h2>
+    <p>Check out this awesome video on YouTube:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/UqdUmWa_t_g?si=eTD3XgAoMQumJEVH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>
+</html>
