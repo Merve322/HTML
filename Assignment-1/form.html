@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AltSchool | Signup Form</title>
+</head>
+<body>
+
+    <header>
+        <!--Global Navigation to both pages-->
+        <nav>
+            <a href="index.html">Biography Page</a>
+            <a href="form.html">Application Form</a>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Signup</h1>
+        <p>Take the next steps to apply at AltSchool Africa</p>
+        <!--Replicating ALT SCHOOL application form-->
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>First Name: <input type="text" name="first_name" required></label><br>
+                <label>Last Name: <input type="text" name="last_name" required></label><br>
+                <label>Email: <input type="email" name="email" required></label><br>
+                <label>Date of Birth: <input type="date" name="dob" required></label><br>
+                <label>Gender: 
+                    <select name="gender">
+                        <option value="">Select gender</option>
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                        <option value="nonbinary">Nonbinary</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label>Phone Number: <input type="tel" name="phone" required></label><br>
+                <label>Country of Residence: <input type="text" name="country" required></label><br>
+                <label>State of Residence: <input type="text" name="state" required></label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Security</legend>
+                <label>Password: <input type="password" name="password" required></label><br>
+                <label>Confirm Password: <input type="password" name="confirm_password" required></label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label>How did you hear about us?
+                    <input type="text" name="referral">
+                </label><br>
+            </fieldset>
+
+            <p>
+                By clicking continue, I agree to the 
+                <a href="#">Terms of Use</a> and acknowledge that I have read the 
+                <a href="#">Privacy Policy</a>.
+            </p>
+
+            <button type="submit">Signup</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Address: Federal Capital Territory, Abuja.</p>
+        <p>&copy; 2025 Merveille Naomi.</p>
+    </footer>
+
+</body>
+</html>
